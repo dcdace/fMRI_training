@@ -1,3 +1,6 @@
 jupyter contrib nbextension install --user
-jupyter nbextension enable --py widgetsnbextension
-jupyter labextension install @jupyter-widgets/jupyterlab-manager@0.38 --minimize=False
+jupyter nbextension enable ecollapsible_headings/main
+jupyter nbextension enableexercise/main
+jupyter nbextension enableexercise2/main
+jupyter nbextension enableautoscroll/main
+jupyter nbextension enabletoc2/main
