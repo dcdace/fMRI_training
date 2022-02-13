@@ -7,3 +7,6 @@ matplotlib
 numpy
 jupyter_contrib_nbextensions
 ipython
+seedir
+pandas
+scipy
