@@ -7,3 +7,4 @@ nipype == 1.7.0
 matplotlib
 numpy
 jupyter_contrib_nbextensions
+ipython
