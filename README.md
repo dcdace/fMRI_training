@@ -1,5 +1,6 @@
-# fMRI training materials
-Preliminary fMRI training materials (work in progress). 
+# Introduction to fMRI analysis
+
+Materials for the **"Introduction to fMRI analysis"** course at the [MRC CBU](https://www.mrc-cbu.cam.ac.uk/). 
 ___
 
 ## Interactive notebooks
