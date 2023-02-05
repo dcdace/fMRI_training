@@ -1,0 +1,28 @@
+------------------------------------
+ENVIRONMENT
+------------------------------------
+start VSCode (from Windows, can also start from X2GO)
+connect to login node: da05@login-j03
+add demo folder
+conda info
+python --version
+git --version
+
+create fMRI environment from environment.yml
+conda activate fMRI
+python --version
+git --version
+
+start jupyter notebook
+
+------------------------------------
+DATA MANAGEMENT
+------------------------------------
+./create_study_template.sh FaceRecognition
+tree
+
+cd FaceRecognition
+ls -a
+
+git init
+ls -a
