@@ -113,6 +113,7 @@ if not os.path.exists(jason_file):
     # Data to be written
     content = {
         "Name": "First-level GLM analysis",
+        "BIDSVersion": "1.4.0",
         "DatasetType": "results",
         "GeneratedBy": [
             {
