@@ -1,4 +1,5 @@
-# **"Introduction to fMRI analysis"** workshop at the [MRC CBU](https://www.mrc-cbu.cam.ac) 
+# Introduction to fMRI analysis
+Materials for the "Introduction to fMRI analysis" workshop the [MRC CBU](https://www.mrc-cbu.cam.ac) 
 
 ## Data Management
 
@@ -7,7 +8,7 @@
 * Notebook: [Analysis Environment](https://nbviewer.org/github/dcdace/fMRI_training/blob/main/class-materials/01_nb_Analysis-Environment.ipynb?flush_cache=true)
 * Notebook: [fMRI Data Management](https://nbviewer.org/github/dcdace/fMRI_training/blob/main/class-materials/02_nb_Data-Management.ipynb?flush_cache=true)
 
-## Pre-processing
+## Quality Control & Pre-processing
 
 * [Slides](class-materials/fMRI_02_QC-and-Preprocessing.pdf)
 
