@@ -16,7 +16,7 @@ Materials for the "Introduction to fMRI analysis" workshop the [MRC CBU](https:/
 
 ## Statistical Analysis & Reporting
 
-* [Slides] (coming soon)
+* [Slides](class-materials/fMRI_03_StatisticalAnalysis.pdf)
 
 * Notebook: [Subject Level Analysis](https://nbviewer.org/github/dcdace/fMRI_training/blob/main/class-materials/04_nb_Subject-Level-Analysis.ipynb?flush_cache=true)
 * Notebook: [Group Level Analysis](https://nbviewer.org/github/dcdace/fMRI_training/blob/main/class-materials/05_nb_Group-Level-Analysis.ipynb?flush_cache=true)
