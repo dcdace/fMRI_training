@@ -1,3 +1,7 @@
+#!/bin/bash
 jupyter contrib nbextension install --user
 jupyter nbextension enable exercise2/main
 jupyter nbextension enable toc2/main
+wget -q -O ~/hands-on/FaceRecognition.zip "https://dl.dropboxusercontent.com/s/q030cu844joczm6/FaceRecognition.zip"
+unzip ~/hands-on/FaceRecognition.zip -d ~/hands-on/
+rm ~/hands-on/FaceRecognition.zip
