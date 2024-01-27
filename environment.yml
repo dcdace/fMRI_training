@@ -19,7 +19,7 @@ dependencies:
   - seaborn
   - pip:
     - atlasreader
-    - heudiconv==0.11.3
+    - heudiconv
     - nibabel
     - niflow-nipype1-workflows
     - nilearn
@@ -28,3 +28,4 @@ dependencies:
     - nistats
     - pybids
     - plotly
+    - requests
