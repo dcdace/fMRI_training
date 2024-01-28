@@ -19,6 +19,7 @@ dependencies:
   - seaborn
   - pip:
     - atlasreader
+    - jupyter_contrib_nbextensions
     - heudiconv
     - nibabel
     - niflow-nipype1-workflows

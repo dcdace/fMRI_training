@@ -1,5 +1,17 @@
 #!/bin/bash
 
+echo "Running jupyter contrib nbextension install"
+jupyter contrib nbextension install --user
+echo "Finished jupyter contrib nbextension install"
+
+# echo "Running nbextension enable exercise2/main"
+# jupyter nbextension enable exercise2/main
+# echo "Finished nbextension enable exercise2/main"
+
+echo "Running nbextension enable toc2/main"
+jupyter nbextension enable toc2/main
+echo "Finished nbextension enable toc2/main"
+
 # download the FaceRecognition.zip file from dropbox
 echo "Downloading FaceRecognition.zip"
 wget -q -O ~/notebooks/FaceRecognition.zip "https://dl.dropboxusercontent.com/s/q030cu844joczm6/FaceRecognition.zip"
@@ -15,5 +27,7 @@ echo "Finished removing FaceRecognition.zip"
 
 # move the contents from ~notebooks/FaceRecognition/data/bids to ~notebooks/data
 echo "Moving the contents from ~notebooks/FaceRecognition/data/bids to ~notebooks/data"
+mkdir -p ~/notebooks/data/
 mv ~/notebooks/FaceRecognition/data/bids/* ~/notebooks/data/
+rm -rf ~/notebooks/FaceRecognition/
 echo "Finished moving the contents from ~notebooks/FaceRecognition/data/bids to ~notebooks/data"
