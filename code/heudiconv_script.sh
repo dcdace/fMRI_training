@@ -18,7 +18,7 @@
 # Example usage: 
 #   sbatch --array=0-1 heudiconv_script.sh "01 02" "/path/to/dicom/sub-01 /path/to/dicom/sub-02" heuristic.py /path/to/output
 #
-# It is assumed that you have a conda environment called 'heudiconv' available (check with 'conda env list'). 
+# It is assumed that you have a conda environment called 'fmri' available (check with 'conda env list'). 
 # If not, create a conda environment with the heudiconv and dcm2niix packages installed.
 #
 # ============================================================
@@ -47,9 +47,9 @@ echo "Processing subject ${SUBJECT_ID}"
 echo "DICOM path: ${DICOM_PATH}"
 
 # ------------------------------------------------------------
-# Activate the heudiconv environment
+# Activate the fmri environment (or any other environment with heudiconv installed)
 # ------------------------------------------------------------
-conda activate heudiconv
+conda activate fmri
 
 # ------------------------------------------------------------
 # Run the heudiconv
