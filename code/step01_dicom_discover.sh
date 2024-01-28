@@ -3,12 +3,16 @@
 # ============================================================
 # This script is used to discover DICOM files using HeuDiConv.
 #
-# Usage: ./dicom_discover.sh
+# Usage: ./step01_dicom_discover.sh
 # 
-# It is assumed that you have a conda environment called 'heudiconv' available (check with 'conda env list'). 
+# It is assumed that you have a conda environment called 'fmri' available (check with 'conda env list'). 
 # If not, create a conda environment with the heudiconv and dcm2niix packages installed.
 #
 # ============================================================
+
+# ------------------------------------------------------------
+# Define your paths
+# ------------------------------------------------------------
 
 # Your project's root directory
 PROJECT_PATH='/imaging/correia/da05/workshops/2024-CBU'
@@ -23,9 +27,9 @@ OUTPUT_PATH="${PROJECT_PATH}/work/dicom_discovery/"
 SUBJECT_ID='01'
 
 # ------------------------------------------------------------
-# Activate the heudiconv environment
+# Activate the fmri environment (or any other environment with heudiconv installed)
 # ------------------------------------------------------------
-conda activate heudiconv
+conda activate fmri
 
 # ------------------------------------------------------------
 # Run the heudiconv
