@@ -3,7 +3,7 @@
 # ======================================================================
 # MRIQC group level: aggregate individual subject reports
 #
-# Run this script after running step04_mriqc_subject.sh and all subjects
+# Run this script after running step05_mriqc_subject.sh and all subjects
 # have been processed.
 #
 # ======================================================================

@@ -1,7 +1,11 @@
 #!/bin/bash
 #-----------------------------------------------------------
-# The job will run the first_level_script.py script for each subject.
+# The script will run the first_level_script.py script for each subject.
+#
 # You will need a conda environment that contains the required packages.
+#
+# Usage:
+#   Configure the variables below and run the script: ./step08_first_level_analysis.sh
 #-----------------------------------------------------------
 
 # ------------------------------------------------------------

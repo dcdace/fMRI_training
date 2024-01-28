@@ -3,6 +3,10 @@
 # ======================================================================
 # Dace Apšvalka (MRC CBU 2024)
 # First level fMRI analysis using Nilearn
+# 
+# This script requres step08_first_level_analysis.sh, unless you define ds
+# and sID here manually 
+#
 # ======================================================================
 
 # ======================================================================
@@ -26,7 +30,7 @@ ds = sys.argv[1] # dataset location
 sID = sys.argv[2].split("sub-")[1] # subject id
 
 # ======================================================================
-print("Running first level analysis for subject " + sID)
+print("Running first-level analysis for subject " + sID)
 start_time = time.time()
 print("Started at: " + time.strftime("%H:%M:%S", time.localtime()))
 
@@ -176,6 +180,6 @@ if not os.path.exists(jason_file):
         outfile.write(json_object)
 
 # ======================================================================
-print("Finished first level analysis for subject " + sID)
+print("Finished first-level analysis for subject " + sID)
 print("Finished at: " + time.strftime("%H:%M:%S", time.localtime()))
 print("Processing time: " + str(round((time.time() - start_time)/60, 2)) + " minutes")

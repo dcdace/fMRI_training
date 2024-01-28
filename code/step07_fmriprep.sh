@@ -4,7 +4,7 @@
 # fMRIPrep for multiple subjects
 #
 # Usage:
-#   Configure the variables below and run the script: ./step06_fmriprep.sh
+#   Configure the variables below and run the script: ./step07_fmriprep.sh
 #
 # =============================================================================
 

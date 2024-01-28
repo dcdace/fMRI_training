@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # ============================================================
-# This script requres step06_fmriprep.sh, unless you define PROJECT_PATH
+# This script requres step07_fmriprep.sh, unless you define PROJECT_PATH
 # and subject here manually 
 #
 # This script uses fmriprep Singularity image
