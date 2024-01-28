@@ -14,20 +14,20 @@ echo "Finished nbextension enable toc2/main"
 
 # download the FaceRecognition.zip file from dropbox
 echo "Downloading FaceRecognition.zip"
-wget -q -O ~/notebooks/FaceRecognition.zip "https://dl.dropboxusercontent.com/s/q030cu844joczm6/FaceRecognition.zip"
+wget -q -O ~/FaceRecognition.zip "https://dl.dropboxusercontent.com/s/q030cu844joczm6/FaceRecognition.zip"
 echo "Finished downloading FaceRecognition.zip"
 
 echo "Unzipping FaceRecognition.zip"
-unzip ~/notebooks/FaceRecognition.zip -d ~/notebooks/
+unzip ~/FaceRecognition.zip -d ~/
 echo "Finished unzipping FaceRecognition.zip"
 
 echo "Removing FaceRecognition.zip"
-rm ~/notebooks/FaceRecognition.zip
+rm ~/FaceRecognition.zip
 echo "Finished removing FaceRecognition.zip"
 
-# move the contents from ~notebooks/FaceRecognition/data/bids to ~notebooks/data
-echo "Moving the contents from ~notebooks/FaceRecognition/data/bids to ~notebooks/data"
-mkdir -p ~/notebooks/data/
-mv ~/notebooks/FaceRecognition/data/bids/* ~/notebooks/data/
-rm -rf ~/notebooks/FaceRecognition/
-echo "Finished moving the contents from ~notebooks/FaceRecognition/data/bids to ~notebooks/data"
+# move the contents from ~/FaceRecognition/data/bids to ~/data
+echo "Moving the contents from ~/FaceRecognition/data/bids to ~/data"
+mkdir -p ~/data/
+mv ~/FaceRecognition/data/bids/* ~/data/
+rm -rf ~/FaceRecognition/
+echo "Finished moving the contents from ~/FaceRecognition/data/bids to ~/data"
