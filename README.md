@@ -14,12 +14,16 @@ Instructor: [Dr Dace Apšvalka](http://dcdace.net)
 ## Example scripts
 
 Example scripts for the fMRI analysis steps are available in the [code](code) directory. They include:
-1. Converting DICOM to BIDS with HeuDiConv, 
-2. Data quality assessment with MRIQC, 
-3. Pre-processing with fMRIPrep, and 
-4. First-level statistical analysis with Nilearn. 
 
-## Hands-On Notebooks
+* **Step 1:** Discovering what DICOM series there are in your raw data
+* **Step 2:** Converting DICOM to BIDS with HeuDiConv
+* **Step 3:** Filling in events files with trial types, onsets, duration etc.
+* **Step 4:** Removing dummy scans from the functional volumes
+* **Step 5:** and **Step 6:**  Data quality assessment with MRIQC
+* **Step 7:** Pre-processing with fMRIPrep
+* **Step 8:** First-level statistical analysis with Nilearn 
+
+## Tutorial/Hands-On Notebooks
 
 You can access the hands-on notebooks in two ways:
 
