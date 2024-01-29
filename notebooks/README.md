@@ -12,7 +12,8 @@ ___
 ## 2) Download the notebooks and run on your computer
 You can also download the notebooks from [notebooks](notebooks) section and run on your computer. The environment required for that to work is in `environment.yml` [file](environment.yml). 
 
-The example dataset with 2 subjects can be downloaded from [Dropbox](https://dl.dropboxusercontent.com/s/q030cu844joczm6/FaceRecognition.zip).
+The example dataset with 2 subjects can be downloaded from [Dropbox](https://dl.dropboxusercontent.com/s/q030cu844joczm6/FaceRecognition.zip);
+or [OwnCloud](https://cloud.mrc-cbu.cam.ac.uk/index.php/s/zBQMYOSnNorebmE) (password: fmri).
 
 ## 3) Static notebooks
 You can also view the notebooks with all solutions provided just clicking on them in the [notebooks](notebooks) directory.
