@@ -23,7 +23,7 @@ SCRIPT_PATH="$PROJECT_PATH"/code/first_level_script.py
 JOB_DIR="$PROJECT_PATH"/work/first-level_job_logs
 
 # Which conda environment to use
-CONDA_ENV=fMRI
+CONDA_ENV=fmri
 
 # ------------------------------------------------------------
 #

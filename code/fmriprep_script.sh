@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # ============================================================
-# This script requres step07_fmriprep.sh, unless you define PROJECT_PATH
+# This script requires step07_fmriprep.sh, unless you define PROJECT_PATH
 # and subject here manually 
 #
 # This script uses fmriprep Singularity image
@@ -27,9 +27,9 @@ echo Submitted subject: "$subject"
 # ======================================================================
 # FMRIPrep with Singularity
 # ======================================================================
-module load apptainer
-apptainer run --cleanenv -B "$PROJECT_PATH":/"$PROJECT_PATH" \
-    /imaging/local/software/singularity_images/fmriprep/fmriprep-23.1.4.sif \
+
+singularity run --cleanenv -B "$PROJECT_PATH":/"$PROJECT_PATH" \
+    /imaging/local/software/singularity_images/fmriprep/fmriprep-21.0.1.simg \
     "$PROJECT_PATH"/data "$PROJECT_PATH"/data/derivatives/fmriprep \
     --work-dir "$PROJECT_PATH"/work/fmriprep \
     participant \

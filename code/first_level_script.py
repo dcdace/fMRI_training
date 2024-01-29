@@ -128,7 +128,7 @@ for design_matrix in design_matrices:
     contrast_list.append(contrasts)
 
 # Compute the contrasts
-stats_type = ['effect_size', 'stat']
+stats_type = ['effect_size', 'z_score']
 for stats in stats_type:
     for contrast_id in contrast_list[0].keys():    
         stats_map = fmri_glm.compute_contrast(
@@ -136,7 +136,9 @@ for stats in stats_type:
             output_type = stats)
         # Save results following BIDS standart
         res_name = os.path.basename(bold[0]).split("run")[0]
-        stats_map.to_filename(os.path.join(outdir, res_name + 'desc-' + contrast_id + '_' + stats + '.nii.gz'))
+        # from stats get only the part before _ for the BIDS file name
+        stats_suffix = stats.split("_")[0]
+        stats_map.to_filename(os.path.join(outdir, res_name + 'desc-' + contrast_id + '_' + stats_suffix + '.nii.gz'))
 
 # ======================================================================
 # CREATE THIS MODEL'S dataset_description.json FILE
