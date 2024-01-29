@@ -79,6 +79,7 @@ bold = layout.get(
     extension='.nii.gz',
     return_type='filename'
     )
+print("Found " + str(len(bold)) + " preprocessed functional files")
 
 # Get the event files
 events = layout.get(
@@ -88,6 +89,8 @@ events = layout.get(
     extension=".tsv", 
     return_type='filename'
     )
+print("Found " + str(len(events)) + " event files")
+
 # Get the confounds and select which ones to include in the design
 confounds = layout.get(
     subject=sID, 
@@ -96,6 +99,8 @@ confounds = layout.get(
     extension=".tsv", 
     return_type='filename'
     )
+print("Found " + str(len(confounds)) + " confounds files")
+
 confounds_of_interest = ['trans_x', 'trans_y', 'trans_z', 'rot_x', 'rot_y', 'rot_z']
 confounds_glm = []
 for conf_file in confounds:
@@ -128,7 +133,7 @@ for design_matrix in design_matrices:
     contrast_list.append(contrasts)
 
 # Compute the contrasts
-stats_type = ['effect_size', 'z_score', 'stat']
+stats_type = ['stat', 'effect_size']
 for stats in stats_type:
     for contrast_id in contrast_list[0].keys():    
         stats_map = fmri_glm.compute_contrast(
