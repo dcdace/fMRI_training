@@ -128,7 +128,7 @@ for design_matrix in design_matrices:
     contrast_list.append(contrasts)
 
 # Compute the contrasts
-stats_type = ['effect_size', 'z_score']
+stats_type = ['effect_size', 'z_score', 'stat']
 for stats in stats_type:
     for contrast_id in contrast_list[0].keys():    
         stats_map = fmri_glm.compute_contrast(

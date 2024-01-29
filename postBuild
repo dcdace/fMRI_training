@@ -29,5 +29,11 @@ echo "Finished removing FaceRecognition.zip"
 echo "Moving the contents from ~/FaceRecognition/data/bids to ~/data"
 mkdir -p ~/data/
 mv ~/FaceRecognition/data/bids/* ~/data/
+# move the contents from ~/FaceRecognition/results to ~/results
+echo "Moving the contents from ~/FaceRecognition/results to ~/results"
+mkdir -p ~/results/
+mv ~/FaceRecognition/results/* ~/results/
+# remove the FaceRecognition folder
 rm -rf ~/FaceRecognition/
-echo "Finished moving the contents from ~/FaceRecognition/data/bids to ~/data"
+
+echo "All done!"
