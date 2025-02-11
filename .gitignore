@@ -6,3 +6,7 @@ freesurfer*
 results
 misc
 __pycache__
+no_share
+code
+notebooks
+slides
