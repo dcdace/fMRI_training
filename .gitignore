@@ -1,12 +1,4 @@
 .ipynb_checkpoints
 .ipynb
-data
-work
-freesurfer*
-results
-misc
 __pycache__
-no_share
-code
-notebooks
-slides
+sandbox
