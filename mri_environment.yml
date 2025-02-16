@@ -35,3 +35,6 @@ dependencies:
       - scikit-image==0.24.0
       - scikit-learn==1.5.1
       - scipy==1.14.0
+# After installation, for use with Jupyter Notebooks, to ensure the ipykernel is properly installed and set up:
+# conda activate mri
+# python -m ipykernel install --user --name mri --display-name "Python (mri)"
