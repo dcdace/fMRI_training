@@ -3,4 +3,3 @@ Materials for the "Introduction to fMRI" workshop at the [MRC CBU](https://www.m
 
 Instructor: [Dr Dace Apšvalka](http://dcdace.net)
 
-... comming soon ...
